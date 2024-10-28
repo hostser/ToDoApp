@@ -7,6 +7,39 @@
         mc:Ignorable="d"
         Title="MainView" Height="450" Width="800">
     <Grid>
-        
+        <TabControl>
+            <TabItem Header="Авторизация">
+                <StackPanel Orientation="Vertical"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Width="100">
+                    <Label Content="LOGIN" />
+                    <TextBox Text="{Binding Login}" />
+                    <Label Content="PASSWORD" />
+                    <TextBox Text="{Binding Password}" />
+                    <Button Content="Login"
+                            Command="{Binding LoginCommand}" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Регистрация">
+                <StackPanel Orientation="Vertical"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Width="100">
+                    <Label Content="FIRSTNAME" />
+                    <TextBox Text="{Binding Firstname}" />
+                    <Label Content="LASTNAME" />
+                    <TextBox Text="{Binding Lastname}" />
+                    <Label Content="MIDDLENAME" />
+                    <TextBox Text="{Binding Middlename}" />
+                    <Label Content="LOGIN" />
+                    <TextBox Text="{Binding Login}" />
+                    <Label Content="PASSWORD" />
+                    <TextBox Text="{Binding Password}" />
+                    <Button Command="{Binding RegisterCommand}"
+                            Content="Register" />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
